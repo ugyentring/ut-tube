@@ -57,3 +57,26 @@ This file is used to store the prettier configuration for the project
 ## .prettierignore
 
 This file is used to define the files where pretteir is not going to implement.
+
+## 2 things to remember when working with a database
+
+1. Database connections can fail due to network issues, wrong credentials, or server downtime. Always handle errors properly using try/catch (async/await) or .catch() (promises).
+
+2. Database is always in another continent. It takes time to connect with database so its always a better approach to use async/await
+
+```js
+const connectDB = async () => {
+  try {
+    const connectionInstance = await mongoose.connect(
+      `${process.env.MONGODB_URI}/${DB_NAME}`
+    );
+
+    console.log(
+      `\n MongoDB connected!! DB HOST: ${connectionInstance.connection.host}`
+    );
+  } catch (error) {
+    console.log("MONGODB connection error", error);
+    process.exit(1);
+  }
+};
+```
