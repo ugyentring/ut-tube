@@ -42,3 +42,18 @@ It store the structure of the data that is going to be stored in the database
 ## routes
 
 It stores the code that match a request's URL and method the code should run
+
+## Prettier
+
+Code formatter for VS code. Installed as extension but also as an node package for a big teams to maintain consistant code formatting.
+
+We install prettier as a Dev (development dependency)
+We just use that for the development purposes but not in the production
+
+## .prettierrc
+
+This file is used to store the prettier configuration for the project
+
+## .prettierignore
+
+This file is used to define the files where pretteir is not going to implement.
