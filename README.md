@@ -99,4 +99,8 @@ Middleware is the software that sits betweene a request and a response to proces
 --> Check if the user is logged in .
 --> Check if the user is admin
 
+## asyncHandler
+
+asyncHandler software prevents unhandled promise rejections and removes repetitive try/catch blocks
+
 
