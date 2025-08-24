@@ -91,3 +91,12 @@ Cross-Origin Resource Sharing lets your backend say which website is allowed to 
 
 --> Without CORS a browser blockas requests from another site for security.
 --> With CORS your server says "this site is allowed", so the browser accepts it.
+
+## Middleware
+
+Middleware is the software that sits betweene a request and a response to process data.
+
+--> Check if the user is logged in .
+--> Check if the user is admin
+
+
