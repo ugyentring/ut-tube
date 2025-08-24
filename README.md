@@ -103,4 +103,7 @@ Middleware is the software that sits betweene a request and a response to proces
 
 asyncHandler software prevents unhandled promise rejections and removes repetitive try/catch blocks
 
+## ApiError
 
+It is a custom error handler for APIs
+It lets you throw errors in a consistent format across your backend
