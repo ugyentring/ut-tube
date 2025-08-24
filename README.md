@@ -80,3 +80,14 @@ const connectDB = async () => {
   }
 };
 ```
+
+## cookie-parser
+
+It is used to parse the cookies that are attached to the request made by the client to the server.
+
+## CORS
+
+Cross-Origin Resource Sharing lets your backend say which website is allowed to request its data.
+
+--> Without CORS a browser blockas requests from another site for security.
+--> With CORS your server says "this site is allowed", so the browser accepts it.
