@@ -148,6 +148,8 @@ It creates digitally signed tokens that can't be tampered with
 
 Think of JWT like a secure digital ID card that proves who you are without storing passwords
 
+It is called as bearer token because you bear/carry it to prove your identity.
+
 Main functions:
 --> sign/create secure token containing user info
 --> verify token if it is valid and hasn't tampered
@@ -176,3 +178,14 @@ userSchema.pre("save", async function (next) {
   next();
 });
 ```
+
+Custom method to compare the passwords
+
+```js
+userSchema.methods.isPasswordCorrect = async function (password) {
+  return await bcrypt.compare(password, this.password);
+};
+```
+
+
+
