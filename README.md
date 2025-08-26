@@ -158,3 +158,21 @@ Uses:
 1. Authentication - prove you are logged in
 2. Authorization - prove you hav permission to access
 3. Secure data transfer - send user info safely between services
+
+## pre hook
+
+It is a hook by mongoose that execute code automatically before database operations(like save, updata, delete)
+
+Lets you run custom logic before something happens to your data
+
+The word "save" is the event on which the pre hook should be executed
+Arrow function is not used in the hook below because arrow function does't have context so we use normal function because the hook need context.
+
+```js
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
+});
+```

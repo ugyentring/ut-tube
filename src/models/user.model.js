@@ -56,4 +56,14 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
+//pre - execute code automatically before database operations
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
+});
+
+//custom method
+
 export const User = mongoose.model("User", userSchema);
