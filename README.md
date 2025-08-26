@@ -120,3 +120,41 @@ A refresh token is a long-lasting key that lets you ask for a new access token w
 ## Access Token
 
 short-lived pass to use an API or service
+
+## bcryptjs
+
+It is a password hashing library written purely in JavaScript hence it is slower compared to bcrypt. It gives better cross-platform compatibility.
+No compilation needed
+
+## bcrypt
+
+It is also a password hashing library but purely written in C++
+It is faster compared to bcryptjs. It requires compilation
+
+## mongoose-aggregate-paginate-v2
+
+It is a MongoDB/moongose plugin that adds pagination funtionality to aggretion queries
+It helps you break down large datasets into smaller, manageable pages
+
+Instead of returning all 10,000 video records at once, it lets you get:
+Page 1. Videos 1-20,
+Page 2: Videos 21-40,
+Page 3: Videos 41-60
+
+## jsonwebtoken
+
+It is node.js library for handling JWTs
+It creates digitally signed tokens that can't be tampered with
+
+Think of JWT like a secure digital ID card that proves who you are without storing passwords
+
+Main functions:
+--> sign/create secure token containing user info
+--> verify token if it is valid and hasn't tampered
+--> decode tokens - extract informations from the valid tokens
+
+Uses:
+
+1. Authentication - prove you are logged in
+2. Authorization - prove you hav permission to access
+3. Secure data transfer - send user info safely between services
