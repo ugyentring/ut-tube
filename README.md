@@ -107,3 +107,16 @@ asyncHandler software prevents unhandled promise rejections and removes repetiti
 
 It is a custom error handler for APIs
 It lets you throw errors in a consistent format across your backend
+
+## mongoose
+
+Mongoose is an Object Data Modelling library for MongoDB in NodeJS.
+It helps you to interact with MongoDB using schemas and models, making data handling easier and more structured.
+
+## Refresh Token
+
+A refresh token is a long-lasting key that lets you ask for a new access token when the old one expires.
+
+## Access Token
+
+short-lived pass to use an API or service
