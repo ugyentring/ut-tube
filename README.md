@@ -187,5 +187,8 @@ userSchema.methods.isPasswordCorrect = async function (password) {
 };
 ```
 
+## cloudinary
+Cloudinary is a cloud-based service that handles all your media files (images, videos, documents) so you don't have to store tehm on your server
+
 
 
