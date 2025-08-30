@@ -203,4 +203,14 @@ Express by itself can't parse that. Multer parses it and gives you access to the
 
 It lets you work with file system to read files, write files, create or delte files, update or append to files, check files details.
 
+## HTTP Crash Course (Hyper Text Transfer Protocol)
+
+1. What are HTTP headers ?
+   Metadata - Key-value sent along with request & response
+
+✅ Request Headers --> from client
+✅ Response Headers --> from server
+✅ Representation Headers --> encoding/compression
+✅ Payload Headers --> data
+
 
