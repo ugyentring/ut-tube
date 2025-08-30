@@ -188,7 +188,19 @@ userSchema.methods.isPasswordCorrect = async function (password) {
 ```
 
 ## cloudinary
+
 Cloudinary is a cloud-based service that handles all your media files (images, videos, documents) so you don't have to store tehm on your server
 
+## Multer
+
+Multer is a Node.js middleware used with express to handle file uploads.
+
+When a user uploads a file from the browser, it arrives as multipart/form-data.
+
+Express by itself can't parse that. Multer parses it and gives you access to the file.
+
+### fs
+
+It lets you work with file system to read files, write files, create or delte files, update or append to files, check files details.
 
 
